@@ -8,8 +8,7 @@ def TotalWords(str_input):
 
 
 def PhraseLength(str_input):
-    # Todo: fill in
-    return null
+    return len(str_input)
 
 def WordCount(str_input):
     # Todo: fill in
