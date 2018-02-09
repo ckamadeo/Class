@@ -1,6 +1,3 @@
-# import helper libraries
-import sys
-
 # returns the total number of words in an input phrase
 def TotalWords(str_input):
     words = str_input.split()
@@ -25,24 +22,3 @@ def WordCount(str_input):
 
     # todo: order results from largest to smallest values
     return dict_WordSet
-
-
-# Get input from the command line
-# argv[0] is the name of the script, first input starts at argv[1]
-str_input = sys.argv[1]
-
-
-# main routine
-
-# todo: preprocess string to remove punctuation
-# todo: preprocess string to normalize casing
-
-TotalWords = TotalWords(str_input)
-PhraseLength = PhraseLength(str_input)
-WordCount = WordCount(str_input)
-
-print "Total Words: %d" % TotalWords
-print "Phrase Length: %d" % PhraseLength
-
-# todo: format output better
-print WordCount
