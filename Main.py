@@ -15,9 +15,15 @@ str_input = sys.argv[1]
 TotalWords = sp.TotalWords(str_input)
 PhraseLength = sp.PhraseLength(str_input)
 WordCount = sp.WordCount(str_input)
+DistinctWords = sp.DistinctWords(str_input)
+DistinctWordCount = sp.DistinctWordCount(str_input)
 
 print "Total Words: %d" % TotalWords
 print "Phrase Length: %d" % PhraseLength
+print "Number of Distinct Words: %d" % DistinctWordCount
 
 # todo: format output better
 print WordCount
+
+# todo: format output better
+print DistinctWords
